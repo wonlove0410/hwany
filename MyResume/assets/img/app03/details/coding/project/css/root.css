@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+:root {
+  --font-111: #111;
+  --font-333: #333;
+  --font-666: #666;
+  --font-999: #999;
+  --font-bbb: #bbb;
+  --font-ddd: #ddd;
+  --font-eee: #eee;
+  --font-fff: #fff;
+  --bg-f9: #f9f9f9;
+  --bg-fff: #fff;
+  --main-blue: #419EFF;
+  --light-blue01: #7CB9F9;
+  --light-blue02: #ACD3FC;
+  --light-blue03: #E5F1FE;
+  --light-blue04: #F6FBFF;
+  --point-pink: #F15371;
+  --light-pink01: #FFB7C5;
+  --light-pink02: #FFF8F9;
+  --point-green: #A6D4B7;
+  --light-green01: #FBFFFA;
+  --point-orage: #FFCEA9;
+  --light-orage01: #FFFCF9;
+  --depth2-line: #eaeaea;
+  --shadow-black:rgba(0,0,0,0.1);
+  --box-shadow: 0 1px 4px rgba(0, 0, 0, 10%);
+}
