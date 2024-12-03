@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스스마트케어</title>
+  <link rel="shortcut icon" href="../../img/common/argosFavicon.svg" type="image/x-icon">
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/root.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div id="common-wrap" class="activityLog-wrap search-wrap">
+    <div class="modal">
+      <div class="modal-body">
+        <ul>
+          <li class="active">전체</li>
+          <li>1개월</li>
+          <li>3개월</li>
+          <li>6개월</li>
+          <li>1년</li>
+          <li>날짜 선택</li>
+        </ul>
+      </div>
+    </div>
+    <div id="tit">
+      <div class="inner">
+        <a href="activitylog_01.html">
+          <img src="../../img/icon/icon-arrow-left.svg" alt="나가기 아이콘" class="out">
+        </a>
+        <div class="search-box">
+          <div class="input">
+            <input class="search02 before" type="text">
+            <input class="search02 after" type="text">
+            <button class="clear">
+              <img src="../../img/icon/icon-clear.svg" alt="검색어 지우기">
+            </button>
+          </div>
+          <button type="button">검색</button>
+        </div>
+      </div>
+    </div>
+    <div class="date-btn search">
+      <div class="step01">
+        <div class="d-inner">
+          <p>최근 검색어</p>
+        </div>
+      </div>
+      <div class="step02">
+        <div class="d-inner">
+          전체
+          <button class="filter"><img src="../../img/icon/icon-arrow-down.svg" alt="더보기 화살표"></button>
+        </div>
+      </div>
+      <div class="step03">
+        <div class="d-inner">
+          <p>최근 검색어</p>
+          <button>모두 지우기</button>
+        </div>
+      </div>
+    </div>
+    <div class="search-inner">
+      <p class="step01">최근 검색 내역이 없습니다</p>
+      <ul class="search-list step02">
+        <li>
+          <a href="#">
+            <div class="text-box">
+              <p class="search-list-date">09월 02일 <span>오후 15:00</span></p>
+              <p>김수급 어르신께서 <s>프로그램</s>에 참여하신 사진 올립니다. 어르신은 활기차게 실내 체조와 건강댄스 프로그램에 참여하셨습니다~^^
+              </p>
+            </div>
+            <img src="../../img/gallery/gallery01.png" alt=".">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="text-box">
+              <p class="search-list-date">09월 01일 <span>오후 17:00</span></p>
+              <p>오늘은 미술 치료<s>프로그램</s>을 진행하였습니다. 김수급 어르신은 활기차게 실내 체조와 건강댄스 프로그램에 참여하셨습니다~^^
+              </p>
+            </div>
+            <img src="../../img/gallery/gallery05.png" alt=".">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="text-box">
+              <p class="search-list-date">08월 31일 <span>오후 19:00</span></p>
+              <p>김수급 어르신께서 <s>프로그램</s>에 참여하신 사진 올립니다. 어르신은 활기차게 실내 체조와 건강댄스 프로그램에 참여하셨습니다~^^
+              </p>
+            </div>
+            <img src="../../img/gallery/gallery06.png" alt=".">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="text-box">
+              <p class="search-list-date">08월 30일 <span>오후 15:00</span></p>
+              <p>김수급 어르신께서 <s>프로그램</s>에 참여하신 사진 올립니다. 어르신은 활기차게 실내 체조와 건강댄스 프로그램에 참여하셨습니다~^^
+              </p>
+            </div>
+            <img src="../../img/gallery/gallery07.png" alt=".">
+          </a>
+        </li>
+      </ul>
+      <div class="step03">
+        <ul>
+          <li>
+            <p>프로그램</p>
+            <button>
+              <img src="../../img/icon/icon-close-small.svg" alt="지우기">
+            </button>
+          </li>
+          <li>
+            <p>신체활동</p>
+            <button>
+              <img src="../../img/icon/icon-close-small.svg" alt="지우기">
+            </button>
+          </li>
+          <li>
+            <p>재활</p>
+            <button>
+              <img src="../../img/icon/icon-close-small.svg" alt="지우기">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    //activityLog_search - '프로그램' 검색
+    $(".activityLog-wrap .search-box button").click(function () {
+      $(".activityLog-wrap .step01").hide();
+      $(".activityLog-wrap .step02").show();
+    });
+    //activityLog_search - 최근 검색어 - show
+    // $(".activityLog-wrap .after").hide();
+    $(".activityLog-wrap .search-box .clear").click(function () {
+      $(".activityLog-wrap .step02").hide();
+      $(".activityLog-wrap .step03").show();
+      $(".activityLog-wrap .before").hide();
+      $(".activityLog-wrap .after").show();
+    });
+    //activityLog_search - '프로그램' 검색 - 모달 - show
+    $(".activityLog-wrap .date-btn.search .step02 .filter").click(function () {
+      $(".activityLog-wrap .modal").fadeIn();
+    });
+    //activityLog_search - '프로그램' 검색 - 모달 - hide
+    $(".activityLog-wrap .modal-body ul li").click(function () {
+      $(".activityLog-wrap .modal").fadeOut();
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스스마트케어</title>
+  <link rel="shortcut icon" href="../../img/common/argosFavicon.svg" type="image/x-icon">
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/root.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="../../js/sub.js"></script>
+</head>
+
+<body>
+  <div id="common-wrap" class="activityLog-wrap">
+    <div id="tit">
+      <div class="modal-date">
+        <div class="modal-date-body">
+          <h4>날짜 선택</h4>
+          <table>
+            <tr>
+              <td>2023년</td>
+              <td>8월</td>
+            </tr>
+            <tr class="point">
+              <td>2024년</td>
+              <td>9월</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>10월</td>
+            </tr>
+          </table>
+          <div class="btn">
+            <button>취소</button>
+            <button>확인</button>
+          </div>
+        </div>
+      </div>
+      <div class="inner">
+        <a href="../home/home.html" class="tit-l">
+          <img src="../../img/icon/icon-arrow-left.svg" alt="나가기 아이콘">
+          <h2>활동일지</h2>
+        </a>
+        <div class="tit-icon">
+          <a href="gallery02.html">
+            <img src="../../img/icon/icon-gallery.svg" alt="갤러리 아이콘">
+          </a>
+          <a href="activitylog_search02.html">
+            <img src="../../img/icon/icon-search-bl.svg" alt="검색 아이콘" class="search">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="date-btn list">
+      2024년 9월
+      <button class="month" type="button">
+        <img src="../../img/icon/icon-arrow-down.svg" alt="더보기 화살표">
+      </button>
+    </div>
+    <!-- main -->
+    <div id="activitylog">
+      <div class="activitylog-inner">
+        <ul class="list">
+          <li>
+            <a href="activitylog_02in.html">
+              <div class="date">
+                09월 10일 화요일 <span>오후 15:00</span>
+              </div>
+              <div class="swiper log">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery01.png" alt="."></li>
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery02.png" alt="."></li>
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery03.png" alt="."></li>
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery04.png" alt="."></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination2"></div>
+              </div>
+              <p>
+                김수급 어르신께서 프로그램에 참여하신 사진 올립니다. 어르신은 활기차게 실내 체조와 건강댄스 프로그램에 참여하셨습니다~^^
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="activitylog_02in.html">
+              <div class="date">
+                09월 09일 월요일 <span>오후 15:00</span>
+              </div>
+              <div class="swiper log">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery12.png" alt="."></li>
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery13.png" alt="."></li>
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery14.png" alt="."></li>
+                  <li class="swiper-slide"><img src="../../img/gallery/gallery15.png" alt="."></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination2"></div>
+
+              </div>
+              <p>
+                김수급 어르신께서 프로그램에 참여하신 사진 올립니다. 어르신은 활기차게 실내 체조와 건강댄스 프로그램에 참여하셨습니다~^^
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    //activityLog01 - 날짜(모달) - show
+    $(".activityLog-wrap .date-btn.list .month").click(function () {
+      $(".activityLog-wrap .modal-date").fadeIn();
+    });
+    //activityLog01 - 날짜(모달) - hide
+    $(".activityLog-wrap .modal-date .btn button").click(function () {
+      $(".activityLog-wrap .modal-date").fadeOut();
+    });
+  </script>
+</body>
+
+</html>

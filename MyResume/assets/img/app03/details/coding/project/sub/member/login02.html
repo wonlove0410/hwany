@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스스마트케어</title>
+  <link rel="shortcut icon" href="../../img/common/argosFavicon.svg" type="image/x-icon">
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/root.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="../../js/sub.js"></script>
+</head>
+
+<body>
+  <div id='common-wrap' class="login-wrap">
+    <div class="login-inner">
+      <div class="top">
+        <ul class="step">
+          <li class='done'>1
+            <span>기관명 선택</span>
+          </li>
+          <li><span></span></li>
+          <li class='active'>2
+            <span>수급자 선택</span>
+          </li>
+          <li><span></span></li>
+          <li class='yet'>3
+            <span>비밀번호 입력</span>
+          </li>
+        </ul>
+        <a href="login01.html" class='btn-cancel'>로그인 취소</a>
+      </div>
+      <div class='h1'>수급자를<span>선택해주세요</span></div>
+      <div>
+        <form>
+          <fieldset>
+            <legend>수급자 선택</legend>
+            <div>
+              <img src="../../img/icon/icon-search.svg" alt="검색">
+              <input type="text" placeholder="수급자 성함을 입력해주세요">
+            </div>
+            <ul class="select-list">
+              <li>
+                <dl>
+                  <dt>김수급</dt>
+                  <dd>(1931.03.02/여)</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>이수급</dt>
+                  <dd>(1931.03.02/여)</dd>
+                </dl>
+              </li>
+            </ul>
+            <dl class="selected">
+              <dt>김수급</dt>
+              <dd>(1931.03.02/여)</dd>
+            </dl>
+            <div class="ex">
+              <p>*선택된 수급자 성함을 클릭하면 수급자를 다시 선택할 수 있습니다.</p>
+            </div>
+            <div class='btn-wrap'>
+              <a href="login01.html" class='btn-back'>이전 단계</a>
+              <a href='https://argossmartcare.vercel.app/' class='btn-next'>다음단계</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

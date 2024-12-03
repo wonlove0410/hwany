@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스스마트케어</title>
+  <link rel="shortcut icon" href="../../img/common/argosFavicon.svg" type="image/x-icon">
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/root.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+  <!-- js -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="../../js/sub.js"></script>
+
+</head>
+
+<body style="overflow: hidden;">
+  <div id="common-wrap" class="form-wrap form01-wrap">
+    <!-- tit -->
+    <div id="tit">
+      <div class="inner">
+        <a href="reservation_01.html">
+          <img src="../../img/icon/icon-arrow-left.svg" alt="나가기 아이콘">
+        </a>
+        <h2>면회</h2> <!-- 각자 이름 변경 하시오 -->
+      </div>
+    </div>
+    <!-- main -->
+    <div id="main">
+      <div class="main-inner no-depth02Nnav">
+        <form>
+          <fieldset>
+            <legend>면회</legend>
+            <p class="ex">필수 입력 항목은 <em>*</em>로 표시되어 있습니다.</p>
+            <div class="item-list">
+              <label>
+                <span class="justify">예 약 자 명</span>
+                <em>*</em>
+              </label>
+              <div class="input">
+                <input type="text" placeholder="예약자명을 입력해주세요">
+              </div>
+            </div>
+            <div class="item-list">
+              <label>
+                <span class="justify">날 짜</span>
+                <em>*</em>
+              </label>
+              <div class="input date">
+                <input type="text" placeholder="날짜를 선택해주세요" class="before">
+                <div class="after">
+                  <span>2024.09.21</span>
+                  <strong>-</strong>
+                  <span>0000.00.00</span>
+                </div>
+                <img src="../../img/icon/icon-calendar.svg" alt="달력">
+              </div>
+            </div><!-- item-list -->
+            <div class="item-list">
+              <label>
+                <span class="justify">시 간</span>
+                <em>*</em>
+              </label>
+              <div class="input time">
+                <input type="text" placeholder="시간을 선택해주세요" class="before">
+                <input type="text" value="오전 9:30" class="after">
+                <img src="../../img/icon/icon-clock.svg" alt="시간">
+              </div>
+            </div>
+            <div class="item-list company">
+              <label>
+                <span class="justify">동 행 자 수</span>
+              </label>
+              <div class="input number">
+                <button class="minus" type="button">
+                  <img src="../../img/icon/icon-minus.svg" alt="빼기">
+                </button>
+                <ul>
+                  <li class="num01">0</li>
+                  <li class="num02">1</li>
+                  <li class="num03">2</li>
+                </ul>
+                <button class="plus" type="button">
+                  <img src="../../img/icon/icon-plus.svg" alt="더하기">
+                </button>
+              </div>
+            </div>
+            <div class="item-list relationship">
+              <label>
+                <span class="justify">관 계</span>
+                <em>*</em>
+              </label>
+              <div class="input">
+                <select>
+                  <option selected disabled hidden class="placeholder">관계를 선택해주세요</option>
+                  <option>가족</option>
+                  <option>지인</option>
+                  <option>기타</option>
+                </select>
+              </div>
+              <div class="input right">
+                <input type="text" placeholder="기타 선택시, 작성해 주세요">
+              </div>
+            </div>
+            <div class="item-list">
+              <label>
+                <span class="justify">연 락 처</span>
+                <em>*</em>
+              </label>
+              <div class="input">
+                <input type="text" placeholder="연락처를 입력해주세요">
+              </div>
+            </div>
+            <div class="item-list textarea">
+              <label>
+                <span class="justify">요 청 사 항</span>
+              </label>
+              <div class="input">
+                <textarea placeholder="요청사항을 입력해주세요"></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <div class="warning">
+            <p>
+              <img src="../../img/icon/icon-error.svg" alt=".">
+              주의사항
+            </p>
+            <ol>
+              <li>방문 전 반드시 사전 예약을 진행해 주시기 바랍니다. 예약 없이 방문하실 경우, 대기 시간이 발생하거나 방문이 제한될 수 있습니다.</li>
+              <li>방문 시 마스크 착용, 손 소독, 체온 측정 등 시설에서 요구하는 안전 수칙을 반드시 준수해 주세요.</li>
+              <li>방문 시 신분증을 반드시 지참해 주시기 바랍니다. 신분 확인 절차가 필요할 수 있습니다.</li>
+              <li>한 번에 방문할 수 있는 인원 수에 제한이 있을 수 있으니, 사전 예약 시 인원 수를 정확히 입력해 주세요.</li>
+              <li>상황에 따라 방문이 제한될 수 있으니, 예약 당일 시설의 공지사항을 확인해 주시기 바랍니다.</li>
+              <li>예약 시 제공한 연락처는 정확하게 기입해 주세요. 긴급 상황이나 변경 사항 발생 시 연락드릴 수 있습니다.</li>
+              <li>예약된 시간에 맞춰 방문해 주시고, 방문 시간이 초과되지 않도록 협조해 주세요.</li>
+            </ol>
+          </div>
+          <button type="button" class="btn">제출</button>
+        </form>
+
+      </div>
+    </div>
+    <div class="dimmed">
+    </div>
+    <div class="popup">
+      <div class="modal datepicker-calendar">
+        <div class="inner nav-inner">
+          <p>원하시는 날짜를 선택해 주세요.</p>
+          <div class="calendar">
+            <div class="ym">
+              <button class="pre">pre</button>
+              <p>2024년 9월</p>
+              <button class="next">next</button>
+            </div>
+            <table>
+              <tr>
+                <th class="red">일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th class="blue">토</th>
+              </tr>
+              <tr>
+                <td class="disable">1</td>
+                <td class="disable">2</td>
+                <td class="disable">3</td>
+                <td class="disable">4</td>
+                <td class="disable">5</td>
+                <td class="disable">6</td>
+                <td class="disable">7</td>
+              </tr>
+              <tr>
+                <td class="disable">8</td>
+                <td class="disable">9</td>
+                <td class="disable">10</td>
+                <td class="selected today">11</td>
+                <td>12</td>
+                <td>13</td>
+                <td class="blue">14</td>
+              </tr>
+              <tr>
+                <td class="red">15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td class="blue start">21</td>
+              </tr>
+              <tr>
+                <td class="red">22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td class="blue">28</td>
+              </tr>
+              <tr>
+                <td class="red">29</td>
+                <td>30</td>
+                <td class="disable">1</td>
+                <td class="disable">2</td>
+                <td class="disable">3</td>
+                <td class="disable">4</td>
+                <td class="disable">5</td>
+              </tr>
+            </table>
+          </div>
+          <button class="btn-modal-close date-selected">날짜 선택 완료</button>
+        </div>
+      </div>
+      <div class="modal timepicker">
+        <div class="inner nav-inner">
+          <div class="scroll">
+            <p>원하시는 시간을 선택해 주세요.</p>
+            <div class="time">
+              <dl>
+                <dt>오전</dt>
+                <dd>
+                  <div class="dd">9:00</div>
+                  <div class="dd">9:30</div>
+                  <div class="dd">10:00</div>
+                  <div class="dd">10:30</div>
+                  <div class="dd">11:00</div>
+                  <div class="dd">11:30</div>
+                  <div class="dd">12:00</div>
+                  <div class="dd">12:30</div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>오후</dt>
+                <dd>
+                  <div class="dd">1:00</div>
+                  <div class="dd">1:30</div>
+                  <div class="dd">2:00</div>
+                  <div class="dd">2:30</div>
+                  <div class="dd">3:00</div>
+                  <div class="dd">3:30</div>
+                  <div class="dd">4:00</div>
+                  <div class="dd">4:30</div>
+                  <div class="dd">5:00</div>
+                  <div class="dd">5:30</div>
+                  <div class="dd">6:00</div>
+                  <div class="dd">6:30</div>
+                  <div class="dd disable">7:00</div>
+                  <div class="dd disable">7:30</div>
+                  <div class="dd disable">8:00</div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <button class="btn-modal-close date-selected">날짜 선택 완료</button>
+        </div>
+      </div>
+      <div class="submit" style="display: none;">
+        <dl>
+          <dt>제출</dt>
+          <dd>제출 하시겠습니까?</dd>
+        </dl>
+        <div class="btn-wrap">
+          <button type="button" class="no">취소</button>
+          <button type="button" class="yes">확인</button>
+        </div>
+      </div>
+      <div class="submit-complete" style="display: none;">
+        <dl>
+          <dt>
+            <img src="../../img/icon/icon-error.svg" alt="알림">
+            제출완료
+          </dt>
+          <dd>
+            <span class="justify">예 약 자 명</span>
+            김보호
+          </dd>
+          <dd>
+            <span class="justify">날 짜</span>
+            2024년 09월 21일 (토)
+          </dd>
+          <dd>
+            <span class="justify">시 간</span>
+            오전 9:30
+          </dd>
+          <dd>
+            <span class="justify">인 원</span>
+            3명
+          </dd>
+          <dd>
+            <span class="justify">관 계</span>
+            가족
+          </dd>
+          <dd>
+            <span class="justify">요 청 사 항</span>
+            휠체어 대여
+          </dd>
+        </dl>
+        <div class="btn-wrap">
+          <button type="button" class="no">취소</button>
+          <a href="../reservation/reservation_02.html" class="yes">확인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

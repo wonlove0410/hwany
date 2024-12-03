@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스스마트케어</title>
+  <link rel="shortcut icon" href="../../img/common/argosFavicon.svg" type="image/x-icon">
+  <!-- font -->
+  <link rel="stylesheet" href="../../font/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/root.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/sub.css">
+  <!-- js -->
+  <script defer src="../../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../../js/swiper-bundle.min.js"></script>
+  <script defer src="../../js/sub.js"></script>
+</head>
+
+<body>
+  <div id="common-wrap" class="bills-wrap bills01"> <!-- 각자 이름 변경 하시오 -->
+    <!-- tit -->
+    <div id="tit">
+      <div class="inner">
+        <a href="../home/home.html">
+          <img src="../../img/icon/icon-arrow-left.svg" alt="나가기 아이콘">
+        </a>
+        <h2>청구/입금 내역</h2> <!-- 각자 이름 변경 하시오 -->
+      </div>
+    </div>
+    <!-- top-nav -->
+    <div id="top-nav">
+      <div class="inner nav-inner">
+        <ul>
+          <li class="active">
+            <a href="../../sub/bills/bill_01.html">
+              청구 내역
+            </a>
+          </li>
+          <li>
+            <a href="../../sub/bills/bill_02.html">
+              입금 내역
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- main -->
+    <div id="main">
+      <div class="main-inner">
+        <div class="filter">
+          <ul class="filter-period">
+            <li>1개월</li>
+            <li>3개월</li>
+            <li>지난달</li>
+            <li>직접 설정</li>
+          </ul>
+          <div>&middot;</div>
+          <ul class="filter-arrange">
+            <li>최신순</li>
+            <li>과거순</li>
+          </ul>
+          <button class="btn-filter">
+            <img src="../../img/icon/icon-arrow-down.svg" alt="필터 버튼">
+          </button>
+        </div>
+        <ul class="content-list">
+          <li>
+            <a href="../../sub/bills/bill_0101.html">
+              <div>
+                <p>2024.08 청구요금</p>
+                <p>2024.08.01~2024.08.31</p>
+              </div>
+              <p>3,189,236원</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div>
+                <p>2024.07 청구요금</p>
+                <p>2024.07.01~2024.07.31</p>
+              </div>
+              <p>3,123,644원</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div>
+                <p>2024.06 청구요금</p>
+                <p>2024.06.01~2024.06.31</p>
+              </div>
+              <p>3,058,052원</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- bottom-nav -->
+    <nav id="bottom-nav">
+      <ul class="gnb">
+        <li>
+          <a href="../home/home.html">
+            <img src="../../img/icon/icon-home.svg" alt="홈 아이콘">
+            홈
+          </a>
+        </li>
+        <li>
+          <a href="../reservation/reservation_01.html">
+            <img src="../../img/icon/icon-calendar.svg" alt="예약 아이콘">
+            예약
+          </a>
+        </li>
+        <li class="active">
+          <a href="../bills/bill_01.html">
+            <img src="../../img/icon/icon-cash.svg" alt="청구/입금 아이콘">
+            청구/입금
+          </a>
+        </li>
+        <li>
+          <a href="../mypage/mypage_01.html">
+            <img src="../../img/icon/icon-mypage.svg" alt="마이페이지 아이콘">
+            마이페이지
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--modal-->
+    <div class="dimmed">
+    </div>
+    <div class="popup">
+      <div class="modal filter">
+        <div class="inner nav-inner">
+          <div class="period">
+            <p class="sub-tit">조회기간</p>
+            <ul class="filter-period">
+              <li>
+                <button class="button">1개월</button>
+              </li>
+              <li>
+                <button class="active button">3개월</button>
+              </li>
+              <li>
+                <button class="button">지난달</button>
+              </li>
+              <li>
+                <button class="button">직접설정</button>
+              </li>
+            </ul>
+            <div class="select-date">
+              <dl>
+                <dt>2024.08.11</dt>
+                <dd>
+                  <button>
+                    <img src="../../img/icon/icon-calendar.svg" alt="달력">
+                  </button>
+                </dd>
+              </dl>
+              <p>-</p>
+              <dl>
+                <dt>2024.09.11</dt>
+                <dd>
+                  <button>
+                    <img src="../../img/icon/icon-calendar.svg" alt="달력">
+                  </button>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="arrange">
+            <p class="sub-tit">거래내역정렬</p>
+            <ul class="filter-arrange">
+              <li>
+                <button class="active button">최신순</button>
+              </li>
+              <li>
+                <button class="button">과거순</button>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-modal-close filter-selected">확인</button>
+        </div>
+      </div>
+      <div class="modal datepicker-calendar">
+        <div class="inner nav-inner">
+          <p>원하시는 날짜를 선택해 주세요.</p>
+          <div class="calendar">
+            <div class="ym">
+              <button class="pre">pre</button>
+              <p>2024년 9월</p>
+              <button class="next">next</button>
+            </div>
+            <table>
+              <tr>
+                <th class="red">일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th class="blue">토</th>
+              </tr>
+              <tr>
+                <td class="red">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td class="red">8</td>
+                <td>9</td>
+                <td>10</td>
+                <td class="selected">11</td>
+                <td>12</td>
+                <td>13</td>
+                <td class="blue">14</td>
+              </tr>
+              <tr>
+                <td class="red">15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td class="blue">21</td>
+              </tr>
+              <tr>
+                <td class="red">22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td class="blue">28</td>
+              </tr>
+              <tr>
+                <td class="red">29</td>
+                <td>30</td>
+                <td class="disable">1</td>
+                <td class="disable">2</td>
+                <td class="disable">3</td>
+                <td class="disable">4</td>
+                <td class="disable">5</td>
+              </tr>
+            </table>
+          </div>
+          <button class="btn-modal-close date-selected">날짜 선택 완료</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
